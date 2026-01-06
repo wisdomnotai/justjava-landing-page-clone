@@ -58,27 +58,33 @@
 
     <main class="max-w-7xl mx-auto px-6">
         
-        <section class="relative pt-16 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    
-            <div class="absolute -top-20 -right-20 w-[500px] h-[500px] bg-purple-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="h-10"></div>
+
+        <section class="relative pt-8 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
+            <div class="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
+                <svg class="opacity-20 w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,500 C200,300 400,700 600,500 C800,300 1000,700 1000,500" stroke="#6366F1" fill="transparent" stroke-width="2" />
+                </svg>
+            </div>
+        
             <div>
-                <h1 class="text-[56px] leading-[1.1] font-bold text-slate-900 tracking-tight">
-                    We help <span class="text-slate-400">Start-ups</span><br>
+                <h1 class="text-[56px] leading-[1.1] font-bold text-slate-900 tracking-tighter">
+                    We help <span class="text-slate-400 font-medium">Start-ups</span><br>
                     <span class="flex items-center gap-3">
                         <i data-lucide="code-2" class="text-indigo-600 w-12 h-12"></i>
                         Build
                     </span>
-                    better <span class="text-slate-400">MVPs</span><br>
+                    better <span class="text-slate-400 font-medium">MVPs</span><br>
                     that just works.
                 </h1>
                 
-                <p class="mt-8 text-lg text-slate-500 max-w-md leading-relaxed">
+                <p class="mt-6 text-[17px] text-slate-500 max-w-md leading-relaxed">
                     We help start-ups and scale-ups build, launch, and maintain reliable software with dedicated engineering pods and a structured delivery process.
                 </p>
         
-                <div class="mt-10">
-                    <button class="bg-[#4F46E5] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition-transform">
+                <div class="mt-8">
+                    <button class="bg-[#4F46E5] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:bg-[#4338CA] transition-all">
                         <div class="w-5 h-5 bg-white/20 rounded-md flex items-center justify-center">
                             <div class="w-2 h-2 bg-white rotate-45"></div>
                         </div>
@@ -88,30 +94,69 @@
                 </div>
             </div>
         
-            <div class="relative group cursor-pointer">
-                <div class="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
-                    <div class="relative aspect-[4/3] bg-slate-200">
-                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail" class="w-full h-full object-cover">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 blur-2xl rounded-[50px] -z-10"></div>
+                
+                <div class="rounded-[40px] overflow-hidden shadow-2xl border-[12px] border-white bg-white">
+                    <div class="relative aspect-[1.1/1] bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Founder" class="w-full h-full object-cover">
                         
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform cursor-pointer">
                                 <i data-lucide="play" class="fill-slate-900 w-6 h-6 ml-1"></i>
                             </div>
                         </div>
         
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 flex items-center gap-2">
-                            <div class="w-4 h-4 bg-indigo-500 rounded"></div>
-                            <span class="text-white text-xs font-bold uppercase tracking-widest">JustJava</span>
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-indigo-950/40 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 flex items-center gap-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded-sm flex items-center justify-center">
+                                <div class="w-1.5 h-1.5 bg-white rotate-45"></div>
+                            </div>
+                            <span class="text-white text-[10px] font-bold uppercase tracking-[0.2em]">JustJava</span>
                         </div>
                     </div>
                 </div>
             </div>
-        
         </section>
-
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10">
-            <div class="h-24 bg-white border border-gray-100 shadow-sm rounded-2xl p-6">Card 1</div>
-            <div class="h-24 bg-white border border-gray-100 shadow-sm rounded-2xl p-6">Card 2</div>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10 relative z-20">
+    
+            <div class="bg-white border border-gray-100 p-6 rounded-[24px] shadow-sm flex items-center justify-between group hover:border-indigo-100 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-indigo-600 transition-colors">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2">
+                            CoreCare™ 
+                            <span class="text-[10px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full uppercase tracking-wider">Post-launch</span>
+                        </h3>
+                        <p class="text-sm text-slate-500">Our dedicated software maintenance system.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1 bg-slate-50 rounded-full border border-slate-100">
+                    <div class="w-1.5 h-1.5 bg-slate-300 rounded-full"></div>
+                    <i data-lucide="chevron-right" class="w-3 h-3 text-slate-400"></i>
+                </div>
+            </div>
+        
+            <div class="bg-white border border-gray-100 p-6 rounded-[24px] shadow-sm flex items-center justify-between group hover:border-indigo-100 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-slate-400 group-hover:text-indigo-600 transition-colors">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 flex items-center gap-2">
+                            DeliveryOS 
+                            <span class="text-[10px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded-full uppercase tracking-wider">Process</span>
+                        </h3>
+                        <p class="text-sm text-slate-500">How we ship reliable software on time.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 px-3 py-1 bg-slate-50 rounded-full border border-slate-100">
+                    <div class="w-1.5 h-1.5 bg-slate-300 rounded-full"></div>
+                    <i data-lucide="chevron-right" class="w-3 h-3 text-slate-400"></i>
+                </div>
+            </div>
+        
         </section>
 
         <section class="py-24">
