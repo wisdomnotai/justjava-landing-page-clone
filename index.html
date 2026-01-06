@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustJava | Custom Software for Startups and Enterprise Teams</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F8F9FB] text-slate-900">
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center px-10 py-5 bg-white/80 backdrop-blur-md">
+        <div class="font-bold text-xl">JustJava</div>
+        <ul class="hidden md:flex gap-8 text-sm font-medium">
+            <li>Services</li>
+            <li>DesignOS</li>
+            <li>About us</li>
+            <li>Insights</li>
+        </ul>
+        <button class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold">
+            Book a call
+        </button>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6">
+        
+        <section class="relative py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="bg-red-50 p-10 min-h-[400px]">
+                <h1 class="text-6xl font-bold mb-6">Hero Text Placeholder</h1>
+            </div>
+            <div class="bg-blue-50 p-10 min-h-[400px] rounded-3xl relative">
+                <div class="absolute -z-10 -top-10 -right-10 w-64 h-64 bg-purple-400/20 blur-3xl rounded-full"></div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10">
+            <div class="h-24 bg-white border border-gray-100 shadow-sm rounded-2xl p-6">Card 1</div>
+            <div class="h-24 bg-white border border-gray-100 shadow-sm rounded-2xl p-6">Card 2</div>
+        </section>
+
+        <section class="py-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">Our Services</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="h-80 bg-green-50 rounded-3xl p-8 border border-gray-100">Service 1</div>
+                <div class="h-80 bg-green-50 rounded-3xl p-8 border border-gray-100">Service 2</div>
+                <div class="h-80 bg-green-50 rounded-3xl p-8 border border-gray-100">Service 3</div>
+            </div>
+        </section>
+
+        <section class="py-24 overflow-hidden">
+            <div class="flex gap-6">
+                <div class="min-w-[350px] h-64 bg-cyan-400 rounded-3xl rotate-2">Card</div>
+                <div class="min-w-[350px] h-64 bg-indigo-400 rounded-3xl -rotate-2">Card</div>
+                <div class="min-w-[350px] h-64 bg-purple-400 rounded-3xl rotate-1">Card</div>
+                <div class="min-w-[350px] h-64 bg-fuchsia-400 rounded-3xl -rotate-1">Card</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t mt-20 py-20 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-10">
+            <div class="bg-slate-100 h-40 col-span-2">Brand/Logo</div>
+            <div class="bg-slate-50 h-40">Links 1</div>
+            <div class="bg-slate-50 h-40">Links 2</div>
+            <div class="bg-slate-50 h-40">Links 3</div>
+        </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
