@@ -58,13 +58,55 @@
 
     <main class="max-w-7xl mx-auto px-6">
         
-        <section class="relative py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="bg-red-50 p-10 min-h-[400px]">
-                <h1 class="text-6xl font-bold mb-6">Hero Text Placeholder</h1>
+        <section class="relative pt-16 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+            <div class="absolute -top-20 -right-20 w-[500px] h-[500px] bg-purple-500/10 blur-[120px] rounded-full -z-10"></div>
+            
+            <div>
+                <h1 class="text-[56px] leading-[1.1] font-bold text-slate-900 tracking-tight">
+                    We help <span class="text-slate-400">Start-ups</span><br>
+                    <span class="flex items-center gap-3">
+                        <i data-lucide="code-2" class="text-indigo-600 w-12 h-12"></i>
+                        Build
+                    </span>
+                    better <span class="text-slate-400">MVPs</span><br>
+                    that just works.
+                </h1>
+                
+                <p class="mt-8 text-lg text-slate-500 max-w-md leading-relaxed">
+                    We help start-ups and scale-ups build, launch, and maintain reliable software with dedicated engineering pods and a structured delivery process.
+                </p>
+        
+                <div class="mt-10">
+                    <button class="bg-[#4F46E5] text-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:scale-105 transition-transform">
+                        <div class="w-5 h-5 bg-white/20 rounded-md flex items-center justify-center">
+                            <div class="w-2 h-2 bg-white rotate-45"></div>
+                        </div>
+                        <span class="text-sm">Ready for a scale up?</span>
+                        <span class="border-l border-white/20 pl-3">Book a free consultation call</span>
+                    </button>
+                </div>
             </div>
-            <div class="bg-blue-50 p-10 min-h-[400px] rounded-3xl relative">
-                <div class="absolute -z-10 -top-10 -right-10 w-64 h-64 bg-purple-400/20 blur-3xl rounded-full"></div>
+        
+            <div class="relative group cursor-pointer">
+                <div class="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
+                    <div class="relative aspect-[4/3] bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80" alt="Video Thumbnail" class="w-full h-full object-cover">
+                        
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                                <i data-lucide="play" class="fill-slate-900 w-6 h-6 ml-1"></i>
+                            </div>
+                        </div>
+        
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 flex items-center gap-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded"></div>
+                            <span class="text-white text-xs font-bold uppercase tracking-widest">JustJava</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        
         </section>
 
         <section class="grid grid-cols-1 md:grid-cols-2 gap-6 -mt-10">
