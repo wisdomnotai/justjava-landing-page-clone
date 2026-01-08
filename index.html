@@ -242,7 +242,7 @@
         </section>
 
         <!-- Testimonials section - displaying client feedback -->
-        <section class="mb-24 md:mb-40">
+       <section class="mb-24 md:mb-40">
             <h2 class="text-center text-3xl md:text-5xl font-extrabold mb-12 md:mb-20 tracking-tighter">Testimonials</h2>
             
             <div class="max-w-4xl mx-auto bg-white border border-slate-100 rounded-[32px] md:rounded-[48px] p-6 md:p-12 shadow-sm relative">
@@ -315,48 +315,6 @@
         </section>
     </main>
 
-    <footer class="bg-slate-50 border-t border-slate-100 py-12 md:py-20">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                <div class="flex items-center gap-2 mb-4">
-                    <div class="w-6 h-6 bg-[#4F46E5] rounded flex items-center justify-center">
-                        <div class="w-2 h-2 bg-white rotate-45"></div>
-                    </div>
-                    <span class="text-lg font-extrabold tracking-tighter">JustJava</span>
-                </div>
-                <p class="text-slate-400 text-xs font-bold leading-relaxed">Just Results. Just Structure. Just Java.</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 col-span-1 md:col-span-3 gap-8 text-[13px]">
-                <div>
-                    <h5 class="font-extrabold mb-4 md:mb-6">Services</h5>
-                    <ul class="space-y-3 text-slate-500 font-medium">
-                        <li><a href="#" class="hover:text-indigo-600">Documentation</a></li>
-                        <li><a href="#" class="hover:text-indigo-600">Repairs</a></li>
-                        <li><a href="#" class="hover:text-indigo-600">Press</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="font-extrabold mb-4 md:mb-6">Company</h5>
-                    <ul class="space-y-3 text-slate-500 font-medium">
-                        <li><a href="#" class="hover:text-indigo-600">About Us</a></li>
-                        <li><a href="#" class="hover:text-indigo-600">Careers</a></li>
-                        <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 mt-12 md:mt-20 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] md:text-[11px] font-bold text-slate-400 uppercase tracking-widest text-center">
-            <span>© 2026 JustJava</span>
-            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Cookies</a>
-            </div>
-        </div>
-    </footer>
-    </main>
 
     <!-- Footer section with links and copyright -->
     <footer class="bg-slate-50 border-t border-slate-100 py-20">
@@ -416,6 +374,17 @@
 
     <!-- Initializing Lucide icons after page load -->
     <script></script>
+    <div id="editModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl p-8 shadow-2xl scale-95 transition-transform">
+            <h3 class="text-xl font-bold mb-2">Edit Content</h3>
+            <p class="text-slate-500 text-sm mb-6">Update the text below to change the live preview.</p>
+            <textarea id="modalTextarea" class="w-full h-32 p-4 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none text-slate-700 mb-6"></textarea>
+            <div class="flex gap-3">
+                <button onclick="closeModal()" class="flex-1 px-6 py-3 rounded-xl font-bold text-slate-500 hover:bg-slate-50 transition-colors">Cancel</button>
+                <button onclick="saveModalChanges()" class="flex-1 px-6 py-3 rounded-xl font-bold bg-[#4F46E5] text-white hover:bg-indigo-700 transition-all">Save Changes</button>
+            </div>
+        </div>
+    </div>
     <script src = "add.js"></script>
 
 </body>
