@@ -26,56 +26,51 @@ function showModalLogic(id) {
     const textarea = document.getElementById('modalTextarea');
 
     if (targetElement && modal) {
-        // Hide the textarea
         textarea.style.display = 'none';
         
-        // COMPLETELY remove old Quill container if it exists
+        // 1. CLEAN UP: Look for any existing Quill toolbar and remove it
+        const existingToolbar = modal.querySelector('.ql-toolbar');
+        if (existingToolbar) {
+            existingToolbar.remove();
+        }
+
+        // 2. RE-CREATE CONTAINER: Ensure the editor div is fresh
         let oldQuillContainer = document.getElementById('quill-editor');
         if (oldQuillContainer) {
             oldQuillContainer.remove();
         }
         
-        // Create fresh Quill container
         const quillContainer = document.createElement('div');
         quillContainer.id = 'quill-editor';
         quillContainer.className = 'mb-6 bg-white rounded-2xl border border-slate-200';
         textarea.parentNode.insertBefore(quillContainer, textarea);
         
-        // Initialize Quill with a nice toolbar
+        // 3. INITIALIZE: Now it's safe to create the new instance
         quillInstance = new Quill('#quill-editor', {
             theme: 'snow',
             modules: {
                 toolbar: [
-                    ['bold', 'italic', 'underline', 'strike'],
-                    [{ 'color': [] }, { 'background': [] }],
+                    ['bold', 'italic', 'underline'],
                     [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-                    ['link'],
-                    ['clean']
+                    ['link', 'clean']
                 ]
-            },
-            placeholder: 'Start typing...'
+            }
         });
         
-        // Get content and remove quotes if testimonial
         let content = targetElement.innerHTML;
         if (currentEditingId === 'testimonial-text') {
-            content = content.replace(/^"|"$/g, ''); // Remove leading/trailing quotes
+            content = content.replace(/^"|"$/g, ''); 
         }
         
-        // Set the content in Quill
         quillInstance.root.innerHTML = content;
         
         modal.classList.remove('hidden');
         modal.classList.add('flex');
         document.body.style.overflow = 'hidden';
         
-        // Focus the editor
         setTimeout(() => quillInstance.focus(), 100);
-    } else {
-        console.log("Omo, I no fit find the ID: " + id);
     }
 }
-
 // Function for the Cancel button
 function closeModal() {
     const modal = document.getElementById('editModal');
